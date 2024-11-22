@@ -16,5 +16,9 @@ class DatabaseSeeder extends Seeder
             CategorieSeeder::class,
         
         ]);
+        $this->call([
+            PhotoSeeder::class,
+        
+        ]);
     }
 }
