@@ -11,7 +11,7 @@ class IndexController extends Controller
     public function index()
     {
         $categories = Categorie::all();
-        $photos = Photo::all();
+        $photos = Photo::paginate(5);
         return view('index', [
             'photos' => $photos,
             'categories' => $categories,

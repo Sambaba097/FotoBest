@@ -14,8 +14,8 @@ class PhotoSeeder extends Seeder
      */
     public function run(): void
     {
-        // Récupérer les 10 premières catégories existantes
-        $categories = Categorie::take(10)->get();
+        // Récupérer les catégories existantes
+        $categories = Categorie::all();
 
         // Créer des photos pour chaque catégorie
         foreach ($categories as $categorie) {
